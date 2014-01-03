@@ -1,0 +1,151 @@
+.oldie-container {
+  display: none;
+}
+
+[hidden] {
+  display: none; }
+
+body {
+  background: #000;
+  margin: 0;
+  background-image: url(../../images/acura_prism_title_sub.png);
+  background-repeat: no-repeat;
+  /*background-attachment: fixed;*/
+  background-position: top center;
+  background-size: contain;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.scene {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0;
+  /*overflow: hidden;*/
+}
+
+.layer:nth-child(0) {
+  /*opacity: 0.90;*/
+}
+.layer:nth-child(1) {
+  /*opacity: 0.15;*/
+}
+.layer:nth-child(2) {
+  /*opacity: 0.30;*/
+}
+.layer:nth-child(3) {
+ /* opacity: 0.45;*/
+}
+.layer:nth-child(4) {
+  /*opacity: 0.60;*/
+}
+.layer:nth-child(5) {
+  /*opacity: 0.75;*/
+}
+.layer:nth-child(6) {
+  /*opacity: 0.90;*/
+}
+.layer:nth-child(7) {
+  /*opacity: 0.90;*/
+}
+
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Font Family */
+.fut {
+  font-family: Futura, "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
+  color:#fff;
+}
+.fut-book {
+  font-family: Futura-Book, FuturaStd-Book, "Futura Std Book", "FuturaStd Book", Futura, "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
+  color:#fff;
+}
+.fut-light {
+  font-family: Futura-Light, FuturaStd-Light, "Futura Light", "FuturaStd Light", Futura, "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
+  color:#fff;
+  text-align:center;
+  line-height:22px;
+  font-size: 16px;
+}
+
+/* Font Format */
+/* Global */
+a {
+  color:#fff;
+  text-decoration:none;
+}
+a:hover {
+  color:#fff;
+  text-decoration:underline;
+}
+
+/* slider */
+.slide-out-div {
+    padding: 15px;
+    width: 475px;
+    /*width: 95%;*/
+    background: #047BD5;
+    border: 0px solid #29216d;
+    background-image: url(../../images/tab_background.png);
+    display: none; /* initially hidden to avoid showing/flashing div on initial pageload */
+} 
+
+.handle {
+  text-align: center;
+}
+
+/* override with mobile style */
+/* Mobile Phones Portrait */
+@media screen and (max-device-width: 480px) and (orientation: portrait){
+    .fut-light {
+    font-family: Futura-Light, FuturaStd-Light, "Futura Light", "FuturaStd Light", Futura, "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
+    color:#fff;
+    text-align:center;
+    line-height:15px;
+    font-size: 11px;
+  }
+
+  .slide-out-div {
+    padding: 5px;
+    width: 260px;
+    /*width: 95%;*/
+    background: #047BD5;
+    border: 0px solid #29216d;
+    background-image: url(../../images/tab_background.png);
+  } 
+
+  body {
+      background-size: 100% auto;
+  }
+}
+
+/* Mobile Phones Landscape */
+@media screen and (max-device-width: 640px) and (orientation: landscape){
+    .fut-light {
+    font-family: Futura-Light, FuturaStd-Light, "Futura Light", "FuturaStd Light", Futura, "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
+    color:#fff;
+    text-align:center;
+    line-height:15px;
+    font-size: 11px;
+  }
+
+    .slide-out-div {
+      padding: 5px;
+      width: 260px;
+      /*width: 95%;*/
+      background: #047BD5;
+      border: 0px solid #29216d;
+      background-image: url(../../images/tab_background.png);
+  } 
+
+  body {
+    background-image: url(../../images/acura_prism_background_mobile.png);
+    background-size: 100% auto;
+  }
+}
+
+
